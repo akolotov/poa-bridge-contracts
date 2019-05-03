@@ -1,0 +1,32 @@
+[parity]
+chain = "simple_poa.json"
+base_path = "chain_data"
+keys_path = "keys"
+
+[network]
+port = 30303
+nat = "none"
+
+[rpc]
+port = 8545
+apis = ["web3", "eth", "pubsub", "net", "parity", "parity_pubsub", "parity_accounts", "traces", "rpc", "shh", "shh_pubsub"]
+cors = ["all"]
+hosts = ["all"]
+
+[ipc]
+disable = true
+
+[ui]
+disable = true
+
+[websockets]
+port = 48546
+
+[account]
+unlock = ["0xcafecafecafecafecafecafecafecafecafecafe"]
+password = ["tmp.pwd"]
+
+[mining]
+engine_signer = "0xcafecafecafecafecafecafecafecafecafecafe"
+reseal_on_txs = "none"
+force_sealing = true

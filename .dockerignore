@@ -4,6 +4,8 @@ deploy/node_modules
 .dockerignore
 deploy/.env
 docker-compose.yml
+docker-compose-for-local-tests.yml
 Dockerfile
 *.log
 flats
+parity
